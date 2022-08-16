@@ -37,7 +37,7 @@ body{
 .background__introduccion{
     background-image: url("../img/Group\ 99.svg"); 
     background-position:top center; 
-    background-size:cover;
+    background-size:contain;
     background-repeat: no-repeat;
    
 }
@@ -177,16 +177,16 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: max-content;
-    object-fit: contain;
     margin: auto;
+    
 }
 
 .introduccion__img{
-    max-width: 22rem;
+    max-width: 50rem;
     flex-direction: column;
     align-items: center;
     border-radius: 50%;
+    padding: 7rem;
 
 }
 
@@ -228,15 +228,19 @@ h3{
 
 .section-about-me{
 
+    align-self: center;
     display: flex;
+    flex-direction: column;
     height: 80vh;
    
 }
 .article-about-me{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-end;
+    height: 100rem;
+    padding: 10rem;
+
 }
 
 .article-about-me h2{
@@ -485,9 +489,20 @@ max-height: 100%;
 }
 
 
+   
+   
 @media (max-width: 480px ){
    
+    .body{
+        min-width: 48rem;
+    }
     
+    .header{  
+        min-height: 7vh; 
+        width: 43rem; 
+        min-width: 8rem; 
+        
+    }
     .nav_secundario{
         display: flex;
         flex-direction: column;
@@ -530,7 +545,7 @@ max-height: 100%;
     
     }
     
-    .nav--link{
+.nav--link{
         text-decoration: none;
         color: var(--white);
         font-size: 1.5rem;
@@ -540,20 +555,27 @@ max-height: 100%;
         font-weight: 700;
     }
 
-    .nav_principal{
+.nav_principal{
         opacity: 0;
         display: none;
     }
-.introduccion{
- 
-        flex-direction: column;
-        align-items: center;
-        border-radius: 50%;
-        width: 35rem;
-        object-fit: contain;
-        margin: auto;
+.background__introduccion {
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
+
+.introduccion{
+ 
+    width: 45rem;
+}
+
+.introduccion__img{
+    max-width: 26rem;
+    padding: 5rem;
+    
+}
 
 .introduccion__titulo{
     font-size: 4rem;
@@ -561,41 +583,59 @@ max-height: 100%;
     text-align: center;
 }
 
+
+
+.section-about-me{
+    height: 45vh;
+    min-width: 48rem;
+    margin-bottom: 7rem;
+}
+.article-about-me{
+    height: 45rem;
+    padding: 2rem;
+    margin-top: 3rem;
+
+}
+
+.article-about-me h2 {
+    text-align: start;
+}
+
+.container--skills{
+min-width: 48rem;
+}
+
 .skills__titulo {
     padding-left: 2rem;
 }
 
-
-    .article-about-me h2 {
-        text-align: start;
-    }
-
-    .experience h2 {
+ .experience h2 {
         display: flex;
         flex-direction: column;
         align-self: flex-start;
         padding-left: 2rem;
+        min-width: 48rem;
     }
+.experience__block{
+    min-width: 48rem;
+}
     
-    
-    .experience__block--1{
+ .experience__block--1{
         font-size: 1.5rem;
         padding-left: 0;
         width: 40%;
-        display: flex;
-        flex-direction: column;
         align-self: self-start;
     
     }
 
-    .experience__block--2 label {
-        text-align: justify;
-        align-self: start;
+.experience__block--2 label {
+      
         padding-left: 4rem;
         width: max-content;
     }
 
     .contenedor-portafolio{
+        min-width: 48rem;
 
     }
        
@@ -637,6 +677,7 @@ max-height: 100%;
         align-items: flex-start;
         padding-bottom: 3rem;
         padding-left: 2rem;
+        min-width: 48rem;
     }
 
     .phone-contacto{
@@ -701,8 +742,25 @@ max-height: 100%;
         margin-top: -4rem;
         padding-bottom: 2rem;
         color: #ADADAD;
+        min-width: 48rem;
 
 }
 
+
+
+@media (min-width: 768px) {
+.nav_principal{
+    
 }
 
+
+}
+
+@media (min-width: 1140px) {
+    
+}
+
+@media (min-width: 1400px) {
+    
+}
+}
