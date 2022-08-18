@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@700&family=Rubik:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
 
 
@@ -499,7 +500,7 @@ max-height: 100%;
     
     .header{  
         min-height: 7vh; 
-        width: 43rem; 
+        width: 30rem; 
         min-width: 8rem; 
         
     }
@@ -568,7 +569,7 @@ max-height: 100%;
 
 .introduccion{
  
-    width: 45rem;
+    width: 28rem;
 }
 
 .introduccion__img{
@@ -587,7 +588,7 @@ max-height: 100%;
 
 .section-about-me{
     height: 45vh;
-    min-width: 48rem;
+    min-width: 28rem;
     margin-bottom: 7rem;
 }
 .article-about-me{
@@ -602,7 +603,7 @@ max-height: 100%;
 }
 
 .container--skills{
-min-width: 48rem;
+min-width: 28rem;
 }
 
 .skills__titulo {
@@ -614,15 +615,15 @@ min-width: 48rem;
         flex-direction: column;
         align-self: flex-start;
         padding-left: 2rem;
-        min-width: 48rem;
+        min-width: 28rem;
     }
 .experience__block{
-    min-width: 48rem;
+    min-width: 28rem;
 }
     
  .experience__block--1{
         font-size: 1.5rem;
-        padding-left: 0;
+        padding-left: 5rem;
         width: 40%;
         align-self: self-start;
     
@@ -635,7 +636,7 @@ min-width: 48rem;
     }
 
     .contenedor-portafolio{
-        min-width: 48rem;
+        min-width: 28rem;
 
     }
        
@@ -677,7 +678,7 @@ min-width: 48rem;
         align-items: flex-start;
         padding-bottom: 3rem;
         padding-left: 2rem;
-        min-width: 48rem;
+        min-width: 28rem;
     }
 
     .phone-contacto{
@@ -742,25 +743,8 @@ min-width: 48rem;
         margin-top: -4rem;
         padding-bottom: 2rem;
         color: #ADADAD;
-        min-width: 48rem;
+        min-width: 28rem;
 
 }
 
-
-
-@media (min-width: 768px) {
-.nav_principal{
-    
-}
-
-
-}
-
-@media (min-width: 1140px) {
-    
-}
-
-@media (min-width: 1400px) {
-    
-}
 }
